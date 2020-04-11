@@ -13,7 +13,12 @@ const AddFormEntry = () => {
             .collection('stores')
             .add({
                 name: store_name,
-                delivery_postcodes: store_postcodes,
+                delivery_postcodes: store_postcodes.split(','),
+            })
+            .then(() => {
+                // TODO: this does not seem to be working!!
+                setStoreName('')
+                setStorePostcodes('')
             })
     }
 
@@ -22,11 +27,11 @@ const AddFormEntry = () => {
             <h2>Add Store</h2>
             <div>
                 <label>Store Name</label>
-                <input type='text' onChange={e => setStoreName(e.currentTarget.value)} />
+                <input type='text' required={true} onChange={e => setStoreName(e.currentTarget.value)} value={store_name} />
             </div>
             <div>
-                <label>Postcode</label>
-                <input type='text' onChange={e => setStorePostcodes(e.currentTarget.value)} />
+                <label>Postcodes (Separated by commas)</label>
+                <input type='text' required={true} onChange={e => setStorePostcodes(e.currentTarget.value)} value={store_postcodes} />
             </div>
             <button>Add Store</button>
         </form>
