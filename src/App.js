@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div>
         <h1>🚚 Delvr</h1>
-        <h3 className='subtitle'>List delivery services that delivery to you!</h3>
+        <h3 className='subtitle'>Stores that deliver to you!</h3>
         <Stores />
         <AddFormEntry />
       </div>
