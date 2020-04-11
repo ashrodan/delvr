@@ -11,6 +11,7 @@ function App() {
         <div>
           <ol>
             <li>list1</li>
+            <li>list2</li>
           </ol>
         </div>
       </div>
