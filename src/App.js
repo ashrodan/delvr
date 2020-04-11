@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import firebase from './firebase'
@@ -7,13 +6,6 @@ import firebase from './firebase'
 import Stores from './components/stores'
 import AddFormEntry from './components/add-store'
 import { firestore } from 'firebase';
-
-// firebase
-//   .firestore()
-//   .collection('stores')
-//   .add({
-//     name
-//   })
 
 function App() {
   return (
