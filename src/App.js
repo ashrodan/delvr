@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>Delvr.xyz</h1>
+        <h1>🚚 Delvr</h1>
         <h3>List delivery services that delivery to you!</h3>
         <Stores />
         <AddFormEntry />
